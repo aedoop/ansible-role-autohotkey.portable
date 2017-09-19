@@ -1,0 +1,10 @@
+---
+# tasks file for autohotkey.portable
+
+- name: Set dir_info,pkg_info fact in {{ ansible_distribution }} by {{ autohotkey_portable_install_type }} install
+  set_fact:
+    dir_info: "{{ autohotkey_portable_dirs[ansible_os_family] }}"
+    pkg_info: "{{ autohotkey_portable_packages[autohotkey_portable_version][ansible_os_family] }}"
+
+- name: Include Windows-{{ autohotkey_portable_install_type }}.yml in {{ ansible_distribution }} by {{ autohotkey_portable_install_type }} install
+  include: Window-{{ autohotkey_portable_install_type }}.yml

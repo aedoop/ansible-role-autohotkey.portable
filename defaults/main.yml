@@ -1,0 +1,7 @@
+---
+# defaults file for autohotkey.portable
+
+package_name: autohotkey.portable
+
+autohotkey_portable_version: 1.1.26.01
+autohotkey_portable_install_type: pull

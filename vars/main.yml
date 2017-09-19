@@ -1,0 +1,12 @@
+---
+# vars file for autohotkey.portable
+
+autohotkey_portable_dirs:
+  Windows:
+    tmp: C:\tmp
+
+autohotkey_portable_packages:
+  1.1.26.01:
+    Windows:
+      file: autohotkey.portable.1.1.26.01.nupkg
+      pull: ftp://10.0.250.100/pub/autohotkey/autohotkey.portable.1.1.26.01.nupkg
